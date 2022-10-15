@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+/* Header e apresentação */
+
+.top{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #E8F3FE 17.5%, #9ef01a);
+    
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+header img{
+    /* height: 110%; */
+    width: 150px;
+}
+
+header nav{
+    width: 35%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.presentation{
+    width: 70%;
+    height: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.presentation h1{
+    font-size: 3rem;
+    position: relative;
+    top: 20%;
+}
+
+.presentation .text{
+    max-width: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+    font-size: 1.5rem;
+}
+
+.presentation nav{
+    width: 50%;
+    position: absolute;
+    bottom: 25%;
+}
+
+.presentation nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.presentation nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* budget */
+
+.budget{
+    padding-top: 35px;
+    width: 80%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.budget h2{
+    font-size: 2.7rem;
+}
+
+.budget a{
+    position: absolute;
+    top: 145%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid #004b23;
+    border-left: 10px solid #007200;
+    border-radius: 5px;
+    background-color: #004b23;
+    transition: all 0.25s ease-in-out;
+}
+
+.budget a:hover{
+    background-color: #fff;
+    color: #007200;
+}
+
+.servicos-container{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    left: 10%;
+    top: 12.5%;
+    row-gap: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.servico{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.servico h1{
+    font-size: 1.6rem;
+}
+
+/* footer */
+
+footer{
+    width: 100vw;
+    height: 10vw;
+    background-color:#004b23;
+    color: #fff;
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15%;
+}
+
+.contatos{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 170%;
+}
+
+.emails nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    gap: 5px;
+}
+
+.numeros nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    gap: 5px;
+}
