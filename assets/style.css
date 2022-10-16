@@ -30,30 +30,48 @@ header{
     height: 10vh;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-around;
     width: 100vw;
     margin: 0 auto;
 }
 
 header img{
-    /* height: 110%; */
     width: 150px;
 }
 
 header nav{
-    width: 35%;
-}
-
-header nav ul{
+    width: 90%;
     display: flex;
     justify-content: space-around;
+
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
     font-size: 1.6rem;
 }
 
-header nav ul a{
+.nav-list a{
     text-decoration: none;
     color: #000;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #000;
+    margin: 8px;
+    transition: 0.3s;
 }
 
 .presentation{
@@ -72,37 +90,31 @@ header nav ul a{
     top: 20%;
 }
 
-.presentation .text{
-    max-width: 75%;
-    margin: 0 auto;
-    position: relative;
-    top: 30%;
-    font-size: 1.5rem;
-}
-
-.presentation nav{
-    width: 50%;
-    position: absolute;
-    bottom: 25%;
-}
-
-.presentation nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.presentation nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.4rem;
-}
-
 .text{
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
+    top: 30%;
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+
+.presentation-links{
+    width: 90%;
+}
+
+.presentation-links ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.presentation-links ul a{
+    color: #000;
+    text-decoration: none;
 }
 
 /* budget */
@@ -153,12 +165,6 @@ header nav ul a{
     grid-template-rows: auto auto;
 }
 
-.servico{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .servico h1{
     font-size: 1.6rem;
 }
@@ -195,7 +201,7 @@ footer{
     list-style: none;
     flex-direction: column;
     position: relative;
-    left: 15%;
+    left: 10%;
     gap: 5px;
 }
 
@@ -206,4 +212,71 @@ footer{
     position: relative;
     left: 15%;
     gap: 5px;
+}
+
+.numeros nav ul a, .emails nav ul a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* tranições */
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width:1400px){
+    .nav-list{
+        width: 100vw;
+        height: 90vh;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 10.4vh;
+        z-index: 1;
+        transform: translateX(100%);
+        background: linear-gradient(to bottom right, #E8F3FE 17.5%, #9ef01a);
+        transition: transform  0.5s ease-in;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu{
+        display: block;
+        align-self: center;
+    }
+
+    .text{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .presentation-links{
+        width: 100%;
+    }
+}
+
+@media (max-width:1100px){
+    .presentation-links ul{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:900px){
+    .presentation h1{
+        font-size: 2.5rem;
+    }
+
+    .text{
+        top: 25%;
+    }
 }
