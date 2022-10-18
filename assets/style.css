@@ -84,10 +84,15 @@ header nav{
     position: relative;
 }
 
-.presentation h1{
-    font-size: 3rem;
+.title-slogan{
+    width: 90%;
+    margin: 0 auto;
     position: relative;
-    top: 20%;
+    top: 10%;
+}
+
+.title-slogan h1{
+    font-size: 3rem;
 }
 
 .text{
@@ -97,7 +102,7 @@ header nav{
     flex-direction: column;
     gap: 15px;
     position: relative;
-    top: 30%;
+    top: 20%;
     font-size: 1.6rem;
     line-height: 50px;
 }
@@ -173,7 +178,7 @@ header nav{
 
 footer{
     width: 100vw;
-    height: 10vw;
+    height: 30vh;
     background-color:#004b23;
     color: #fff;
 }
@@ -189,14 +194,13 @@ footer{
 }
 
 .contatos{
-    width: 45%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 170%;
+    margin-top: 3%;
 }
 
-.emails nav ul{
+.emails nav ul, .numeros nav ul{
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -206,12 +210,7 @@ footer{
 }
 
 .numeros nav ul{
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    position: relative;
     left: 15%;
-    gap: 5px;
 }
 
 .numeros nav ul a, .emails nav ul a{
@@ -256,27 +255,249 @@ footer{
     }
 
     .text{
-        width: 100%;
         font-size: 1.5rem;
     }
 
     .presentation-links{
         width: 100%;
     }
+
+    .servicos-container{
+        column-gap: 20px;
+        height: 70%;
+        top: 7%;
+        left: 0;
+    }
+
+    .servico h1{
+        font-size: 1.4rem;
+    }
+
+    .budget a{
+        top: 147%;
+    }
+
+    .contatos{
+        width: 100%;
+    }
 }
 
 @media (max-width:1100px){
+    .presentation{
+        height: 65vh;
+    }
+    
+    .title-slogan h1{
+        font-size: 2.5rem;
+        top: 12%;
+    }
+    
+    .text{
+        top: 22%;
+    }
+    
     .presentation-links ul{
         flex-direction: column;
     }
+
+    .budget{
+        height: 85vh;
+    }
+    
+    .budget a{
+        position: relative;
+        top: 10%;
+    }
+
+    .servicos-container{
+        height: 65%;
+    }
 }
 
-@media (max-width:900px){
-    .presentation h1{
-        font-size: 2.5rem;
+@media (max-width:930px){
+    
+    .presentation{
+        height: 70vh;
+    }
+
+    .title-slogan{
+        top: 7.5%;
+    }
+    
+    .title-slogan h1{
+        font-size: 2.4rem;
     }
 
     .text{
-        top: 25%;
+        top: 10%;
     }
+
+    .budget h2{
+        font-size: 2.2rem;
+    }
+
+    .emails nav ul, .numeros nav ul{
+        left: 2%;
+        margin-top: 10px;
+    }
+
+    .numeros nav ul{
+        left: 4%;
+    }
+}
+
+@media (max-width: 750px){
+    .text{
+        font-size: 1.3rem;
+        line-height: 40px;
+    }
+
+    footer{
+        height: 40vh;
+    }
+    
+    .footer-container{
+        width: 90%;
+        top: 8%;
+    }
+
+    .contatos{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 650px){
+    header img{
+        width: 125px;
+    }
+    
+    .title-slogan h1{
+        font-size: 2rem;
+        top: 5%;
+    }
+    
+    .text{
+        top: 10%;
+    }
+
+    .budget h2{
+        font-size: 1.8rem;
+    }
+
+    .budget a{
+        font-size: 1.2rem;
+    }
+
+    .servicos-container{
+        top: 5%;
+    }
+
+    .servico h1{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 550px){
+    .presentation{
+        width: 90%;
+        height: 59vh;
+    }
+
+    .presentation-links ul a{
+        font-size: 15px;
+    }
+
+    .budget{
+        height: 88vh;
+    }
+
+    .servicos-container{
+        height: 67%;
+    }
+}
+
+@media (max-width: 460px){
+    .presentation{
+        height: 61.5vh;
+    }
+
+    .title-slogan h1{
+        font-size: 1.8rem;
+    }
+
+    .title-slogan h2{
+        font-size: 18px;
+    }
+
+    .text{
+        width: 85%;
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+
+    .budget{
+        height: 75vh;
+    }
+
+    .budget a{
+        top: 15%;
+        font-size: 17px;
+    }
+    
+    .budget h2{
+        font-size: 1.6rem;
+    }
+
+    .servico h1{
+        font-size: 17px;
+    }
+
+    .servicos-container{
+        height: 55%;
+    }
+}
+
+@media (max-width: 435px) {
+    .servico h1{
+        font-size: 14px;
+    }
+
+    .presentation{
+        height: 80vh;
+    }
+
+    footer{
+        height: 65vh;
+    }
+}
+
+@media (max-width: 390px){
+
+    .presentation-links{
+        position: relative;
+        bottom: 5%;
+    }
+    
+    .presentation-links ul a{
+        font-size: 13.5px;
+    }
+
+    .budget{
+        height: 95vh;
+    }
+
+    .contatos span{
+        font-size: 17px;
+    }
+
+    .contatos{
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 376px){
+    /* .presentation{
+        height: 80vh;
+    } */
 }

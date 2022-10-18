@@ -33,7 +33,7 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init()
 
 // smooth scroll
-const menuItems = document.querySelectorAll('.nav-list a')
+const menuItems = document.querySelectorAll(".nav-list a")
 
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
