@@ -1,0 +1,56 @@
+body{
+    background-color: #B7EFC5;
+}
+
+/* CUSTOMS */
+.color-bg-one{
+    background-color: #6EDE8A;
+}
+
+.color-bg-two{
+    background-color: #208B3A;
+}
+
+.color-white{
+    color: #fff;
+}
+
+.color-black{
+    color: #000
+}
+
+.custom-border{
+    border-radius: 10px;
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, .3);
+}
+
+.footer-bottom-border{
+    border-bottom: 1px solid #FFF;
+}
+
+/* NAVBAR */
+
+#navbar-container{
+    border-bottom: 1px solid #6EDE8A;
+}
+
+/* SERVICOS */
+
+#servicos ul li{
+    list-style: none;
+}
+
+@media(min-width: 768px){
+    /* #servicos ul li{
+        font-size: px;
+    } */
+}
+
+/* FOOTER */
+#contacts ul li{
+    list-style: none;
+}
+
+#contacts ul li a {
+    text-decoration: none;
+}
