@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
 body{
     background-color: #B7EFC5;
 }
@@ -30,8 +32,17 @@ body{
 
 /* NAVBAR */
 
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
 #navbar-container{
     border-bottom: 1px solid #6EDE8A;
+}
+
+#desc-link{
+    text-decoration: none;
 }
 
 /* SERVICOS */
@@ -40,17 +51,26 @@ body{
     list-style: none;
 }
 
-@media(min-width: 768px){
-    /* #servicos ul li{
-        font-size: px;
-    } */
+/* FOOTER */
+#footer-logo{
+    height:120px
+}
+#footer-logo img{
+   height: 100%;
 }
 
-/* FOOTER */
 #contacts ul li{
     list-style: none;
 }
 
 #contacts ul li a {
+    text-decoration: none;
+}
+
+#credits{
+    font-family: 'Source Code Pro', monospace;
+}
+
+#credits p a {
     text-decoration: none;
 }

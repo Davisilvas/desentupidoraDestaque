@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg p-2 color-bg-two" id="navbar-container">
         <div class="container">
           <a class="navbar-brand color-white" href="#home">Desentupidora Destaque</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler color-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,7 +49,7 @@
                 Desentupimos tudo sem quebrar nada!
             </p>
             <p class="text-center fs-5 mt-3">
-                Nosso objetivo é levar até você soluções práticas, rápidas e simples. Também fazemos contratos com empresas e condomínios. Faça agora seu orçamento grátis entrando em contato conosco através dos seguintes canais:
+                Nosso objetivo é levar até você soluções práticas, rápidas e simples. Também fazemos contratos com empresas e condomínios. <a href="#payment" class="color-black" id="desc-link">Clique aqui e faça agora o seu orçamento grátis entrando em contato conosco!</a>
             </p>
         </section>      
 
@@ -125,8 +125,21 @@
         </section>
 
         <footer class="container-fluid p-4 mt-5 color-bg-two color-white">
-            <p class="fs-2">Faça já um orçamento com a gente!</p>
-            <div class="row mt-1 p-2 footer-bottom-border" id="payment">
+            <div class="
+                d-flex 
+                flex-column                             
+                justify-content-md-around"
+                id="payment"
+            >
+                <p class="fs-2 align-self-center order-1">Faça já um orçamento com a gente!</p>
+                <div class="align-self-center order-0" id="footer-logo">
+                    <a href="https://bit.ly/whatsapp-desentupidora-destaque" target="_blank">
+                        <img src="./assets/images/logo1-removebg-preview.png" alt="">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row mt-1 p-2 footer-bottom-border">
                 <p class="fs-4">Formas de pagamento</p>
                 <p class="fs-6">Parcelamos o valor no cartão, e recebemos também em transferência pix! Aceitamos todas as bandeiras de cartão!</p>
             </div>
@@ -158,27 +171,32 @@
                 </div>
                 <div class="col-12 col-md-6">
                     Nossos emails:
-                    <ul>
+                    <ul >
                         <li class="me-2">
-                            <i class="bi bi-envelope-fill"></i>
                             <a href="mailto:contato@desentupidoradestaque.com.br" target="_blank" class="color-white">
+                            <i class="bi bi-envelope-fill"></i>
                                 contato@desentupidoradestaque.com.br
                             </a>
                         </li>
                         <li class="me-2">
-                            <i class="bi bi-envelope-fill"></i>
                             <a href="mailto:geraldo@desentupidoradestaque.com.br" target="_blank" class="color-white">
+                            <i class="bi bi-envelope-fill"></i>
                                 geraldo@desentupidoradestaque.com.br
                             </a>
                         </li>
                         <li class="me-2">
-                            <i class="bi bi-envelope-fill"></i>
                             <a href="mailto:cristiana@desentupidoradestaque.com.br" target="_blank" class="color-white">
-                                cristiana@desentupidoradestaque.com.br
+                                <i class="bi bi-envelope-fill"></i> cristiana@desentupidoradestaque.com.br
                             </a>
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="mt-2 p-2" id="credits">
+                <p class="text-center">
+                    <a target="_blank" href="https://davisantos.dev.br/" class="color-white">Developed by Davi Santos</a>
+                </p>
             </div>
         </footer>
       </div>
