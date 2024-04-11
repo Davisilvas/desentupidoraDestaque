@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body {
+    background-color: #B7EFC5;
+}
+
+/* CUSTOMS */
+.color-bg-one {
+    background-color: #6EDE8A;
+}
+
+.color-bg-two {
+    background-color: #208B3A;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-black {
+    color: #000
+}
+
+.custom-border {
+    border-radius: 10px;
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, .3);
+}
+
+.footer-bottom-border {
+    border-bottom: 1px solid #FFF;
+}
+
+/* NAVBAR */
+
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+#navbar-container {
+    border-bottom: 1px solid #6EDE8A;
+}
+
+#desc-link {
+    text-decoration: none;
+}
+
+/* INCOMING CHANGES */
+#img1 img,
+#img2 img {
+    height: 140px;
+    width: 140px;
+}
+
+#img2 {
+    margin-top: -30px;
+}
+
+#home-section {
+    font-size: .8rem;
+}
+
+#logo-section img {
+    height: 140px;
+    width: 160px;
+}
+
+#btn-link {
+    text-decoration: none;
+    padding: 15px;
+    color: #000;
+    background-color: #4AD66D;
+    /* border: 1px solid #000; */
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+#btn-link:hover {
+    background-color: #155D27;
+    color: #B7EFC5;
+}
+
+#service-img{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#service-section{
+    border-bottom: 1px solid #000;
+}
+
+#slider-img-1 {
+    height: 160px;
+}
+
+@media(min-width: 992px){
+    
+    /* START HOME SECTION */
+    #logo-section{
+        font-size: 1.5rem;
+    }
+
+    #logo-section img {
+        height: 280px;
+        width: 220px;
+    }
+
+    #logo-section p{
+        margin-top: -30px;
+    }
+
+    #img1 img,
+    #img2 img {
+    height: 200px;
+    width: 200px;
+    }
+
+    #img2 {
+        margin-top: -90px;
+    }
+
+    #home-section {
+        font-size: 1.1rem;
+    }
+    /* END OF HOME SECTION */
+
+    /* START OF SERVICES SECTION */
+    #service-section{
+        font-size: 1.1rem;
+    }
+    
+    #service-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #slider-img-1 {
+        height: 250px;
+    }
+}
+
+
+/* SERVICOS */
+
+#servicos ul li {
+    list-style: none;
+}
+
+/* FOOTER */
+#footer-logo {
+    height: 120px
+}
+
+#footer-logo img {
+    height: 100%;
+}
+
+#contacts ul li {
+    list-style: none;
+}
+
+#contacts ul li a {
+    text-decoration: none;
+}
+
+#credits {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#credits p a {
+    text-decoration: none;
+}
