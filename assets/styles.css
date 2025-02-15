@@ -1,181 +1,457 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
-body {
-    background-color: #B7EFC5;
+html {
+  font-size: 16px;
 }
+
+body {
+  /* background-color: #A3E3B2; */
+  background-color: #C5F7D1;
+  /* background-color: #B7EFC5; */
+}
+
+/*
+  #C5F7D1 
+  #A3E3B2
+*/
 
 /* CUSTOMS */
 .color-bg-one {
-    background-color: #6EDE8A;
+  background-color: #6EDE8A;
 }
 
 .color-bg-two {
-    background-color: #208B3A;
+  background-color: #208B3A;
+}
+
+.color-bg-three {
+  background-color: #C5F7D1;
+}
+
+.color-bg-four {
+  background-color: #A3E3B2;
 }
 
 .color-white {
-    color: #fff;
+  color: #fff;
 }
 
 .color-black {
-    color: #000
+  color: #000
 }
 
 .custom-border {
-    border-radius: 10px;
-    box-shadow: .5px 10px 15px rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  box-shadow: .5px 10px 15px rgba(0, 0, 0, .3);
 }
 
 .footer-bottom-border {
-    border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+/* top bar */
+
+#pre-header {
+  height: 40px;
+  width: 100%;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pre-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#hd-links-container {
+  display: flex;
+  padding-right: 5px;
+}
+
+#hd-facebook {
+  background-color: #1877F2;
+}
+
+#hd-instagram {
+  background-color: #E1306C;
+}
+
+#hd-whatsapp {
+  background-color: #25D366;
+
+}
+
+#hd-facebook,
+#hd-instagram,
+#hd-whatsapp {
+  color: #fff;
+  border-radius: 4px;
+  height: 38px;
+  width: 38px;
+  margin-left: 5px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* NAVBAR */
 
-.navbar-toggler {
-    color: #fff;
-    border-color: #fff;
+#menu {
+  height: 130px;
+  width: 100%;
 }
 
-#navbar-container {
-    border-bottom: 1px solid #6EDE8A;
+#menu-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#desc-link {
-    text-decoration: none;
+#nav-links {
+  padding-right: 1.2rem;
+  height: 100%;
+  width: 85%;
 }
 
-/* INCOMING CHANGES */
-#img1 img,
-#img2 img {
-    height: 140px;
-    width: 140px;
+#nav-links ul {
+  font-size: 1.6rem;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-#img2 {
-    margin-top: -30px;
+#nav-links ul li {
+  padding-left: 10px;
 }
 
-#home-section {
+#nav-links ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* #nav-links ul li a:hover {
+  text-decoration: underline;
+} */
+
+#nav-logo {
+  padding-left: 10px;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-logo img {
+  height: 100px;
+  width: 100px;
+}
+
+@media(max-width: 1440px) {
+  #nav-links {
+    display: none;
+  }
+}
+
+@media(max-width: 1280px) {
+  #nav-logo {
+    width: 25%;
+  }
+
+  #hd-facebook,
+  #hd-instagram,
+  #hd-whatsapp{
+    margin-left: 8px;
+  }
+}
+
+@media(max-width: 600px) {
+  #nav-logo {
+    padding-top: 5px;
+    width: 45%;
+  }
+
+  #nav-logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  #nav-logo span {
     font-size: .9rem;
+  }
 }
 
-#logo-section img {
-    height: 140px;
-    width: 160px;
+@media(max-width: 400px){
+  #nav-logo {
+    width: 50%;
+  }
+}
+/* END NAVBAR */
+
+/* MENU MOBILE */
+.overlay-menu {
+  background-color: #00000077;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
 }
 
+.btn-abrir-menu i {
+  color: #000;
+  font-size: 3rem;
+  display: none;
+  padding: 25px 8px;
+}
+
+.menu-mobile {
+  height: 100vh;
+  background-color: #25D366;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.menu-mobile.abrir-menu {
+  width: 65%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+  display: block;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+.menu-mobile nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 10px 5%;
+  transition: .2s;
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: #155D27;
+  color: #fff;
+}
+
+.menu-mobile .btn-fechar i {
+  color: #155D27;
+  font-size: 2rem;
+}
+
+.btn-fechar {
+  padding: 15px 2%;
+}
+
+
+@media(max-width: 1440px) {
+  .btn-abrir-menu i {
+    display: block;
+  }
+}
+
+/* END MENU MOBILE */
+
+/* WHATSAPP BTN */
 #btn-link {
-    text-decoration: none;
-    padding: 15px;
-    color: #000;
-    background-color: #4AD66D;
-    border-radius: 12px;
-    transition: 0.2s ease-in-out;
+  text-decoration: none;
+  padding: 15px;
+  color: #000;
+  background-color: #4AD66D;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
 }
 
 #btn-link:hover {
-    background-color: #155D27;
-    color: #B7EFC5;
+  background-color: #155D27;
+  color: #fff;
+}
+/* END WHATSAPP BTN */
+
+/* HOME SECTION */
+#home-section{
+  width: 100%;
+  padding-bottom: 350px;
+}
+
+.home-container{
+  width: 100%;
+  height: 200px;
+}
+
+.home-block-one{
+  /* height: 500px; */
+  background-image: url("../assets/images/servicesFootage/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  position: relative;
+  padding: 10px;
+}
+
+.home-block-one p{
+  width: 90%;
+  padding: 10px 0px 0px 0px;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.home-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a3e3b2d0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.block-one-title{
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+/* END OF HOME SECTION */
+
+#img1 img,
+#img2 img {
+  height: 140px;
+  width: 140px;
+}
+
+#img2 {
+  margin-top: -30px;
+}
+
+#home-section {
+  font-size: .9rem;
 }
 
 #service-img {
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 #service-section {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 #slider-img-1 {
-    height: 160px;
+  height: 160px;
 }
 
 #footer-emails li i {
-    display: none;
+  display: none;
 }
 
 @media(min-width: 768px) {
 
-    /* START HOME SECTION */
-    #logo-section {
-        font-size: 1.5rem;
-    }
+  /* START HOME SECTION */
+  #logo-section {
+    font-size: 1.5rem;
+  }
 
-    #logo-section img {
-        height: 250px;
-        width: 210px;
-    }
+  #logo-section img {
+    height: 250px;
+    width: 210px;
+  }
 
-    #logo-section p {
-        margin-top: -30px;
-    }
+  #logo-section p {
+    margin-top: -30px;
+  }
 
-    #img1 img,
-    #img2 img {
-        height: 200px;
-        width: 200px;
-    }
+  #img1 img,
+  #img2 img {
+    height: 200px;
+    width: 200px;
+  }
 
-    #img2 {
-        margin-top: -90px;
-    }
+  #img2 {
+    margin-top: -90px;
+  }
 
-    #home-section {
-        font-size: 1.1rem;
-    }
+  #home-section {
+    font-size: 1.1rem;
+  }
 
-    /* END OF HOME SECTION */
+  /* END OF HOME SECTION */
 
-    /* START OF SERVICES SECTION */
-    #service-section {
-        font-size: 1.1rem;
-    }
+  /* START OF SERVICES SECTION */
+  #service-section {
+    font-size: 1.1rem;
+  }
 
-    #service-img {
-        width: 150px;
-        height: 150px;
-    }
+  #service-img {
+    width: 150px;
+    height: 150px;
+  }
 
-    #slider-img-1 {
-        height: 250px;
-    }
+  #slider-img-1 {
+    height: 250px;
+  }
 
-    #footer-emails li i {
-        display: inline;
-    }
+  #footer-emails li i {
+    display: inline;
+  }
 }
 
 
 /* SERVICOS */
 
 #servicos ul li {
-    list-style: none;
+  list-style: none;
 }
 
 /* FOOTER */
 #footer-logo {
-    height: 120px
+  height: 120px
 }
 
 #footer-logo img {
-    height: 100%;
+  height: 100%;
 }
 
 #contacts ul li {
-    list-style: none;
+  list-style: none;
 }
 
 #contacts ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #credits {
-    font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 #credits p a {
-    text-decoration: none;
+  text-decoration: none;
 }

@@ -1,0 +1,106 @@
+<section class="container col-lg-7 d-flex flex-column p-1 mt-2  mt-lg-4 color-black">
+    <div class="container d-flex flex-row justify-content-evenly p-1 color-black col-lg-11" id="home-section">
+      <div class="align-self-start" id="img1">
+        <img src="./assets/images/servicesFootage/img1.jpg" class="rounded" alt="Homem fazendo Desentupimento">
+      </div>
+      <p class="align-self-start text-start ms-2 fw-bold" style="border-bottom: 1px solid #10451D;">
+        A Desentupidora Destaque, a melhor do Rio de Janeiro e grande Rio, atende emergências 24 horas todos os dias,
+        incluindo finais de semana. Levamos a você soluções práticas, rápidas e sem quebrar nada.
+      </p>
+    </div>
+    <div class="container d-flex flex-row justify-content-evenly p-1 mt-2 color-black col-lg-11" id="home-section">
+      <p class="align-self-end text-start me-2 fw-bold" style="border-bottom: 1px solid #10451D;">
+        Fazemos serviços emergenciais, manutenções preventivas, limpezas e instalações. Entre em contato e faça
+        seu
+        orçamento gŕatis!Também fazemos contratos com empresas e condomínios.
+      </p>
+      <div class="align-self-start" id="img2">
+        <img src="./assets/images/servicesFootage/img2.jpg" class="rounded" alt="Homem fazendo reparo em tubulação">
+      </div>
+    </div>
+
+
+    SERVICOS SECTION
+
+      <section class="container-fluid container-lg col-lg-7 d-flex flex-column justify-content-center p-4 mt-5 color-bg-one
+        color-black custom-border" id="servicos">
+    <h1 class="text-center">Veja abaixo os serviços que nós prestamos!</h1>
+
+    <ul class="row mt-4 fw-bold">
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Rede de Esgoto
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Pias
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Ralos
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Limpeza de Fossas Sépticas
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Limpeza e Desentupimento de Piscinas
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Limpeza de Caxia D'água
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Limpeza de Caixa de Passagem
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Vaso Sanitário
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Tanques
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Desentupimento de Caixas de Gordura
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Roçagem
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Dedetização
+      </li>
+
+      <li class="col-12 col-md-6 mb-2">
+        <i class="bi bi-wrench-adjustable-circle-fill"></i>
+        Limpeza de Fossa
+      </li>
+    </ul>
+    <p class="text-center fw-bold">
+      <i class="bi bi-geo-alt"></i>
+      Atendemos em toda a cidade do Rio de Janeiro.
+    </p>
+    <div class="container-fluid mt-1 d-flex flex-column">
+      <a href="https://bit.ly/whatsapp-desentupidora-destaque" target="_blank" rel="noopener noreferrer"
+        class="container fw-bold align-self-center text-center" id="btn-link">
+        <i class="bi bi-whatsapp"></i>
+        Faça agora um orçamento!
+      </a>
+    </div>
+  </section>
